@@ -1,0 +1,53 @@
+{% extends "base_generic.html" %}
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% block script %}
+<script src="{% static 'main.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+</br>
+</br>
+</br>
+</br>
+</br>
+<table cellspacing="0" cellpadding="10">
+  <tr class="rhh3">
+    <th> </th>
+    <th>Sections</th>
+    <th>Time</th>
+    <th>Questions</th>
+
+  </tr>
+
+  {% for item in sections %}
+  <tr>
+    {% if item.order == 1 %}
+    <td><input type="radio" checked="true" name="section_select" id="{{item.id}}" /></td>
+    {% else %}
+    <td><input type="radio" name="section_select" id="{{item.id}}" /></td>
+    {% endif %}
+    <td>{{item.section}}</td>
+    <td>{{item.time}}</td>
+    <td>{{item.questions}}</td>
+  </tr>
+  {% endfor %}
+  <tr>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td><button class="rhbutton" id="test-start-btn" onclick="javascript:startTimer()"> START</button> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+{% endblock %}

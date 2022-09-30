@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+{% load static%}
+
+
+{% block content %}
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+    <div>
+    {% for item in exams %}
+    <!--<li><a href="tables/{{item.id}}">{{item.name}} - {{item.id}}</a></li> -->
+    <a href="{% url 'sectionDetails' item.id %}">{{item.name}}</a>
+    </br>
+    <small style="color:rgb(93, 93, 93)">{{item.description}}</small>
+    </br>
+    </br>
+    {% endfor %}
+  </div>
+{% endblock %}

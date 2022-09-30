@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{%load static%}
+{% block script %}
+<script src="{% static 'main.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+
+<div id="clockContainer" class="centerImg">
+    {% for item in section %}
+    <div hidden id="test-box">{{item.time}}</div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <div id="countdown-box" class="text-center  mt-7  h1 center"></div>
+    {% endfor %}
+
+</div>
+<div class="center">
+    <button class="rhbutton" id="pause-start-btn" onclick="javascript:pauseStart()">STOP</button>
+</div>
+{% endblock %}

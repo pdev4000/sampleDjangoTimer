@@ -1,0 +1,88 @@
+sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  background: blueviolet;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+
+.rhbutton {
+  background-color: #3d82e0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 29px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.rhh3 {
+  font-family: "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 10000;
+  line-height: 16px;
+}
+
+.rhp {
+  font-family: "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bolder;
+  line-height: 14px;
+}
+
+blockquote {
+  font-family: "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/******* Analog clock *******/
+#clockContainer1 {
+  position: relative;
+  margin: auto;
+  height: 20vw;
+  /*to make the height and width responsive*/
+  width: 20vw;
+  background: url(../clockAnalog.jpg) no-repeat;
+  /*setting our background image*/
+}
+
+.centerImg {
+  background: #FF7A59;
+  width: 350px;
+  height: 350px;
+  border-radius: 70%;
+
+  align-items: center;
+  text-align: center;
+}
